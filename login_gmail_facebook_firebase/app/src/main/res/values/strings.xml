@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">login_gmail_facebook_firebase</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCELAR</string>
+
+
+    <!-- utils -->
+    <string name="google">Google</string>
+    <string name="facebook">facebook</string>
+    <string name="phone">celular</string>
+
+    <!-- LoginActivity -->
+    <string name="be_member">Seja um Membro</string>
+    <string name="login_desc_title">Entre para continuar</string>
+    <string name="login_title">Bem vindo</string>
+    <string name="login_sig_in_to">Entrar com:</string>
+    <string name="login_activity_login_falure">Falha ao logar</string>
+    <string name="login_activity_user_register_falure">Falha no registro de usuario</string>
+
+
+
+    <!--API keys facebook-->
+    <string name="facebook_app_id">307032560000504</string> <string name="fb_login_protocol_scheme">fb307032560000504</string>
+
+    <!--<string name="default_web_client_id"></string>-->
+</resources>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView android:id="@+id/logo"
+               android:layout_width="match_parent"
+               android:layout_height="100dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               android:layout_marginEnd="8dp"
+               app:layout_constraintStart_toStartOf="parent"
+               android:layout_marginStart="8dp"
+
+               android:layout_marginTop="8dp"
+               app:layout_constraintTop_toTopOf="parent"
+               android:src="@drawable/ic_default"
+               app:layout_constraintHorizontal_bias="0.11"/>
+    <TextView
+            android:id="@+id/welcome_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/logo"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:text="@string/login_title"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"/>
+
+    <TextView
+            android:id="@+id/login_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/welcome_login"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="@string/login_desc_title"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"/>
+
+    <ImageView
+            android:id="@+id/footer_image"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+
+    <Button
+            android:id="@+id/login_be_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="@string/be_member"
+            android:background="@android:color/black"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            app:layout_constraintBottom_toTopOf="@id/login_siginto"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginBottom="50dp"
+            app:layout_constraintHorizontal_bias="0.0"/>
+
+    <TextView
+            android:id="@+id/login_siginto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/login_sig_in_to"
+            android:textStyle="bold"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/login_line"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.0"/>
+
+    <LinearLayout
+            android:id="@+id/login_line"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            app:layout_constraintBottom_toTopOf="@id/registers_facebook"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:orientation="horizontal"/>
+
+
+    <!--<Button android:id="@+id/registers_celular"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textColor="@color/blackMoove"-->
+    <!--android:text="@string/phone"-->
+    <!--android:background="@color/whiteMoove"-->
+
+    <!--app:layout_constraintBottom_toTopOf="@id/registers_facebook"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--android:layout_marginStart="18dp"-->
+    <!--android:layout_marginEnd="18dp"-->
+    <!--app:layout_constraintHorizontal_bias="0.0"/>-->
+
+    <Button android:id="@+id/registers_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="@string/facebook"
+            android:background="@android:color/white"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            app:layout_constraintBottom_toTopOf="@id/registers_google"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.0"/>
+
+    <Button android:id="@+id/registers_google"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="@string/google"
+            android:background="@android:color/white"
+            android:layout_marginBottom="40dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+
+            app:layout_constraintBottom_toBottomOf="@id/footer_image"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+    <include
+            android:id="@+id/load_login"
+            layout="@layout/item_load_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone"
+
+    />
+
+</android.support.constraint.ConstraintLayout>
